@@ -1,0 +1,103 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(49, 179, 179, 0.936);
+    text-align: center;
+}
+
+h1{
+    padding: 2rem;
+    font-size: 3rem;
+    text-decoration: underline;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    color: rgba(8, 7, 28, 0.796);
+}
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    font-size: 8vmin;
+    color: rgba(93, 42, 42, 0.781);
+    background-color: rgb(236, 220, 220);
+}
+
+
+/* Winner Popup */
+#winner-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;              
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.popup-content {
+    background: white;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 0 2rem rgba(0,0,0,0.3);
+}
+
+.popup-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+#new-game {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: teal;
+    color: white;
+    transition: 0.3s;
+}
+
+#new-game:hover {
+    background-color: darkslategray;
+}
+
+.box.win {
+    transform: scale(1.03);
+    box-shadow: 0 0 1rem rgba(255, 200, 0, 0.6);
+    background-color: #fff7d6;
+}
+
+
